@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 139vh;
+    overflow: hidden;
+    z-index: 1;
+   
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; /* Display content in a column */
+    align-items: flex-start; /* Align content to the left */
+    padding: 110px;
+    height: 140vh;
+    background-color: rgba(0, 0, 0, 0.666);
+   
+  }
+  
+  .intro-text,
+  .about-text {
+    text-align: left;
+    font-weight: bold;
+    max-width: 50%;
+    margin-bottom: 20px;
+    color: #ffffff; /* Set the text color */
+  }
+  
+  .intro-header,
+  .about-text h2,
+  .about-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top :20px ;
+    /* background-color: rgba(0, 0, 0, 0.666); */
+    color:rgb(166, 161, 161) ;
+    
+  }
+  
+  .about-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.507);
+    /* filter: blur(1px);     */
+    
+    /* background: transparent; */
+    position: absolute;
+    bottom: 8rem;
+    margin-right: 7rem;
+    border-radius: 25px;
+
+  }
+  
+  .features {
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 20px;
+    color: #fff; /* Set the text color */
+    z-index: 1000;
+    filter: none;
+
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: rgb(239, 247, 221);
+    font-weight: bold;
+    font-family: cursive;
+    text-shadow: 4px 4px black;
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding-left: 60px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  .features li {
+    margin: 8px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(180, 196, 147);
+    color: rgb(9, 9, 9);
+    font-family: 'Kalam', cursive;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  
+  .chatbot-icon {
+    margin-top: 20px; /* Add space between features and chatbot icon */
+    margin-right: 50px;
+  }
+  
+  .chatbot-icon img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2em; /* Adjust the icon size */
+}
+
+.feature-item p {
+    margin-top: 10px;
+}

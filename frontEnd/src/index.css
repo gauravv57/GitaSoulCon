@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main{
+  background-color:#f2f2f2;
+  min-height: 100vh;
+  display:flex;
+  justify-content:space-around;
+}
+
+.chatbotbg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdf-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdf-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.pdf-btn:hover {
+  background-color:rgb(2, 101, 11) ;
+}
+div.chat-wrapper[opened="true"] {
+  height: 80%;
+  width: 40%;
+}
